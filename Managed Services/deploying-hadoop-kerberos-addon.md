@@ -31,7 +31,7 @@ Cloudera Hadoop can be secured with Kerberos through the use of the Hadoop Kerbe
 
 4\. Verify your configuration details.
 
-![CLC Verify Addon Configuration](../images/deploying-hadoop-kerberos-addon-04.PNG)
+![CLC Verify Addon Configuration](../images/deploying-hadoop-kerberos-addon-04.png)
 
 6\. Once verified, click on the ‘deploy blueprint’ button.
 You will see the deployment details along with an email stating the Blueprint is queued for execution.
