@@ -38,7 +38,22 @@ You will see the deployment details along with an email stating the Blueprint is
 
 ![CLC Kerberos addon Blueprint Executing](../images/deploying-hadoop-kerberos-addon-05.png)
 
-You will receive a second email reporting that the addon Blueprint has been successfully deployed. You will receive two more email messages, the first letting you know that the Kerberos configuration is begun, and a follow-up upon completion. The amount of time needed for configuration will vary depending on the size of your cluster. **_Please do not use the servers until you have received this final email._**
+You will receive a second email reporting that the addon Blueprint has been successfully deployed. You will receive two more email messages, the first letting you know that the Kerberos configuration is begun, and a follow-up upon completion. The amount of time needed for configuration will vary depending on the size of your cluster. **_Please do not attempt to use the servers until you have received this final email._**
+
+6\. Veryify Kerberos Addon Installation
+During the Kerberos addon installation, the Cloudera Manager will create all of the menus needed for all Kerberos-enabled services.
+
+To verify Kerberos is installed on Cloudera cluster, click on the **Administration** menu and select **Kerberos**.
+
+![CLC Administration Menu in Cloudera Manager](../images/deploying-hadoop-kerberos-addon-06.png)
+
+The screen will indicate whether Kerberos is enabled. You can select the **Credentials** tab to view the Kerberos setup and key that were generated.
+
+![CLC Kerberos Details Screen](../images/deploying-hadoop-kerberos-addon-07.png)
+
+When Kerberos is enabled, all services effected by Kerberos (e.g., mgmt1, zookeeper, hdfs, and hbase) should be running properly.
+
+![CLC Cloudera Manager with Services Functional](../images/deploying-hadoop-kerberos-addon-08.png)
 
 ###Other Resources
 - More on configuring authentication in Cloudera: [Configuring Authentication in Cloudera Manager](http://www.cloudera.com/content/cloudera/en/documentation/core/latest/topics/cm_sg_authentication.html)
